@@ -38,7 +38,7 @@ const CouplePortraitSection = () => {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="absolute bottom-[9%] sm:bottom-[11%] left-1/2 -translate-x-1/2 w-[72%] sm:w-[68%] max-w-[310px] z-10 flex items-end justify-center pointer-events-none"
+            className="absolute bottom-[7%] sm:bottom-[8%] left-1/2 -translate-x-1/2 w-[88%] sm:w-[84%] max-w-[380px] z-10 flex items-end justify-center pointer-events-none"
           >
             <img
               src="/assets/traditional-couple.png"
