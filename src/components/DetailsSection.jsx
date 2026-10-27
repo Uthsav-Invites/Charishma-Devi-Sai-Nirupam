@@ -96,47 +96,47 @@ const DetailsSection = () => {
           </div>
 
           {/* 3 Detail Rows */}
-          <div className="w-full flex flex-col gap-3 my-2 text-left bg-[#FAF3E6] p-4 rounded border border-[#C5A15B]/40">
+          <div className="w-full flex flex-col gap-3.5 my-2 text-left bg-[#FAF3E6] p-4 sm:p-5 rounded-lg border border-[#C5A15B]/40 shadow-sm">
             {/* Date */}
-            <div className="flex items-center gap-3">
-              <CalendarIconExact className="w-7 h-7 text-[#9E782F] shrink-0" />
-              <div className="w-[1.5px] h-8 bg-[#C5A15B]/70 shrink-0"></div>
+            <div className="flex items-center gap-3 sm:gap-3.5">
+              <CalendarIconExact className="w-8 h-8 text-[#9E782F] shrink-0" />
+              <div className="w-[1.5px] h-10 sm:h-11 bg-gradient-to-b from-[#C5A15B]/30 via-[#C5A15B] to-[#C5A15B]/30 shrink-0"></div>
               <div className="flex flex-col">
-                <span className="font-cormorant font-semibold tracking-wider uppercase text-[11px] text-[#9E782F]">
+                <span className="font-cormorant font-bold tracking-[0.25em] uppercase text-[10px] sm:text-[11px] text-[#9E782F] leading-tight">
                   {schedule.dayOfWeek}
                 </span>
-                <span className="font-cormorant font-bold text-base sm:text-lg text-[#820A24]">
+                <span className="font-cormorant font-bold text-2xl sm:text-3xl text-[#820A24] leading-tight drop-shadow-[0_1px_1px_rgba(130,10,36,0.12)]">
                   {schedule.dateFormatted}
                 </span>
               </div>
             </div>
 
             {/* Time */}
-            <div className="flex items-center gap-3">
-              <ClockIconExact className="w-7 h-7 text-[#9E782F] shrink-0" />
-              <div className="w-[1.5px] h-8 bg-[#C5A15B]/70 shrink-0"></div>
+            <div className="flex items-center gap-3 sm:gap-3.5">
+              <ClockIconExact className="w-8 h-8 text-[#9E782F] shrink-0" />
+              <div className="w-[1.5px] h-10 sm:h-11 bg-gradient-to-b from-[#C5A15B]/30 via-[#C5A15B] to-[#C5A15B]/30 shrink-0"></div>
               <div className="flex flex-col">
-                <span className="font-cormorant font-semibold tracking-wider uppercase text-[11px] text-[#9E782F]">
+                <span className="font-cormorant font-bold tracking-[0.25em] uppercase text-[10px] sm:text-[11px] text-[#9E782F] leading-tight">
                   MUHURTHAM
                 </span>
-                <span className="font-cormorant font-bold text-base sm:text-lg text-[#820A24]">
-                  {schedule.muhurthamTime} (IST)
+                <span className="font-cormorant font-bold text-2xl sm:text-3xl text-[#820A24] leading-tight drop-shadow-[0_1px_1px_rgba(130,10,36,0.12)]">
+                  {schedule.muhurthamTime}
                 </span>
               </div>
             </div>
 
             {/* Venue */}
-            <div className="flex items-start gap-3">
-              <LocationIconExact className="w-7 h-7 text-[#9E782F] shrink-0 mt-0.5" />
-              <div className="w-[1.5px] h-10 bg-[#C5A15B]/70 shrink-0"></div>
+            <div className="flex items-start gap-3 sm:gap-3.5">
+              <LocationIconExact className="w-8 h-8 text-[#9E782F] shrink-0 mt-0.5" />
+              <div className="w-[1.5px] h-11 sm:h-12 bg-gradient-to-b from-[#C5A15B]/30 via-[#C5A15B] to-[#C5A15B]/30 shrink-0"></div>
               <div className="flex flex-col">
-                <span className="font-cormorant font-semibold tracking-wider uppercase text-[11px] text-[#9E782F]">
+                <span className="font-cormorant font-bold tracking-[0.25em] uppercase text-[10px] sm:text-[11px] text-[#9E782F] leading-tight">
                   VENUE:
                 </span>
-                <span className="font-cormorant font-bold text-sm sm:text-base text-[#820A24]">
+                <span className="font-cormorant font-bold text-base sm:text-lg text-[#820A24] leading-snug">
                   {venue.name}
                 </span>
-                <span className="font-cormorant font-semibold text-xs text-[#820A24] uppercase">
+                <span className="font-cormorant font-semibold text-xs text-[#820A24] uppercase leading-tight mt-0.5">
                   {venue.street}, {venue.city}, {venue.state}
                 </span>
               </div>
