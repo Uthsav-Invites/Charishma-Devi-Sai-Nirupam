@@ -120,16 +120,16 @@ function App() {
           {/* Event & Venue with Muhurtham & Google Maps */}
           <DetailsSection />
 
-          {/* Final Blessings & Footer */}
-          <Footer />
+          {/* Bride & Groom Couple Portrait Card */}
+          <CouplePortraitSection />
 
           {/* Ornamental Divider */}
           <div className="w-full flex items-center justify-center py-2 bg-[#FAF3E6]">
             <div className="w-2/3 h-[1px] bg-gradient-to-r from-transparent via-[#C5A15B] to-transparent"></div>
           </div>
 
-          {/* Bride & Groom Couple Portrait Finale Card */}
-          <CouplePortraitSection />
+          {/* Final Blessings & Closing (Footer) */}
+          <Footer />
         </main>
       </div>
     </>
