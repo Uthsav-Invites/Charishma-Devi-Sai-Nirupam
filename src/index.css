@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beigeBg: #F5EFE3;
+  --color-cardBeige: #FBF6EB;
+  --color-cardBeigeDark: #F3E7CF;
+  
+  --color-maroonText: #820A24;
+  --color-maroonDark: #630519;
+  
+  --color-goldAntique: #A37B32;
+  --color-goldBorder: #C5A15B;
+  --color-goldHighlight: #E5C77E;
+  
+  --color-bodyText: #483424;
+  --color-bodyMuted: #6B5442;
+  
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-cursive: "Great Vibes", "Alex Brush", cursive;
+  --font-script: "Alex Brush", "Great Vibes", cursive;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #EFE6D5;
+    color: #483424;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-cormorant);
+    background-image: 
+      radial-gradient(#C5A15B 0.75px, transparent 0.75px),
+      radial-gradient(#820A24 0.5px, #EFE6D5 0.5px);
+    background-size: 32px 32px;
+    background-position: 0 0, 16px 16px;
+    background-attachment: fixed;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Card paper texture & borders exactly matching the image */
+.card-beige-texture {
+  background: radial-gradient(circle at 50% 30%, #FDF9F0 0%, #FAF3E6 55%, #F4E8D1 100%);
+  box-shadow: 
+    0 20px 50px -10px rgba(72, 52, 36, 0.18),
+    0 0 0 1px rgba(197, 161, 91, 0.3);
+}
+
+.gold-frame-outer {
+  border: 1px solid #C5A15B;
+}
+
+.gold-frame-inner {
+  border: 2px solid #C5A15B;
+}
+
+/* Name calligraphic styling with matching thickness */
+.bride-name-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #820A24;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 1px rgba(130, 10, 36, 0.12);
+}
+
+.groom-name-heading {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  color: #820A24;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 1px rgba(130, 10, 36, 0.12);
+}
+
+.engagement-heading {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 600;
+  color: #820A24;
+  text-shadow: 0 1px 1px rgba(130, 10, 36, 0.1);
+}
