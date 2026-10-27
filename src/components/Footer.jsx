@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { INVITATION_CONFIG } from '../config/invitationConfig';
-import { OmSymbol, LotusMotif, CardRosetteDivider, LeafBranchFlourish } from './TraditionalMotifs';
+import { OmSymbol, LotusMotif, LeafBranchFlourish } from './TraditionalMotifs';
 
 const Footer = () => {
   const { bride, groom, event } = INVITATION_CONFIG;
@@ -38,15 +38,37 @@ const Footer = () => {
             {event.thankYouNote}
           </p>
 
-          {/* Divider */}
-          <CardRosetteDivider className="my-2 max-w-[220px]" />
+          {/* Heart Line Divider above Charishma */}
+          <div className="flex items-center justify-center gap-2 my-2 text-[#C5A15B]">
+            <span className="w-8 sm:w-14 h-[1px] bg-gradient-to-r from-transparent to-[#C5A15B]"></span>
+            <span className="text-[9px] text-[#9E782F]">●</span>
+            <span className="text-xs sm:text-sm text-[#820A24]">❤</span>
+            <span className="text-[9px] text-[#9E782F]">●</span>
+            <span className="w-8 sm:w-14 h-[1px] bg-gradient-to-l from-transparent to-[#C5A15B]"></span>
+          </div>
 
           {/* Couple's Names */}
           <div className="my-2 flex flex-col items-center">
             <h3 className="font-playfair italic font-bold text-3xl sm:text-4xl text-[#820A24] leading-tight">
               {bride.fullName}
             </h3>
-            <span className="font-cormorant italic text-lg text-[#9E782F]">&amp;</span>
+            
+            {/* Interlocking Rings Image Motif */}
+            <motion.div
+              animate={{
+                scale: [1, 1.06, 1],
+                rotate: [0, 1.5, -1.5, 0],
+              }}
+              transition={{ repeat: Infinity, duration: 4.5, ease: 'easeInOut' }}
+              className="my-1.5 flex items-center justify-center"
+            >
+              <img
+                src="/assets/ring.png"
+                alt="Engagement Rings"
+                className="w-9 sm:w-11 h-auto object-contain drop-shadow-[0_3px_8px_rgba(163,123,50,0.32)]"
+              />
+            </motion.div>
+
             <h3 className="font-cursive font-semibold text-4xl sm:text-5xl text-[#820A24] leading-tight">
               {groom.fullName}
             </h3>
