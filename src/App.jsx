@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import CoupleSection from './components/CoupleSection';
 import DetailsSection from './components/DetailsSection';
 import Footer from './components/Footer';
+import CouplePortraitSection from './components/CouplePortraitSection';
 import EnvelopeOverlay from './components/EnvelopeOverlay';
 import FallingPetals from './components/FallingPetals';
 import { INVITATION_CONFIG } from './config/invitationConfig';
@@ -121,6 +122,14 @@ function App() {
 
           {/* Final Blessings & Footer */}
           <Footer />
+
+          {/* Ornamental Divider */}
+          <div className="w-full flex items-center justify-center py-2 bg-[#FAF3E6]">
+            <div className="w-2/3 h-[1px] bg-gradient-to-r from-transparent via-[#C5A15B] to-transparent"></div>
+          </div>
+
+          {/* Bride & Groom Couple Portrait Finale Card */}
+          <CouplePortraitSection />
         </main>
       </div>
     </>

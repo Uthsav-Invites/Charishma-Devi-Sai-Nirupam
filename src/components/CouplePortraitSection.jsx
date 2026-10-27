@@ -7,7 +7,7 @@ const CouplePortraitSection = () => {
 
   return (
     <section className="relative py-12 sm:py-16 px-4 sm:px-6 flex flex-col items-center justify-center bg-[#FAF3E6] overflow-hidden">
-      
+
       {/* Subtle background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-gradient-to-tr from-[#F4DDD0]/50 to-[#E8C2B0]/30 blur-3xl pointer-events-none" />
 
@@ -21,10 +21,10 @@ const CouplePortraitSection = () => {
       >
         {/* Arched Background Frame (Concentric Arch Lines & Soft Fill) */}
         <div className="relative w-full h-[380px] sm:h-[440px] flex items-end justify-center">
-          
+
           {/* Outer Arch Contour Line */}
           <div className="absolute inset-x-3 sm:inset-x-5 top-2 bottom-8 rounded-t-full border border-[#DDAF98]/50 pointer-events-none" />
-          
+
           {/* Middle Fine Arch Accent */}
           <div className="absolute inset-x-6 sm:inset-x-8 top-5 bottom-8 rounded-t-full border border-[#E8C4B0]/40 pointer-events-none" />
 
@@ -40,7 +40,7 @@ const CouplePortraitSection = () => {
 
           {/* Couple Figures with Floating Animation */}
           <div className="relative z-10 w-full h-full flex items-end justify-center">
-            
+
             {/* Bride Illustration */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -92,7 +92,7 @@ const CouplePortraitSection = () => {
 
       {/* Auspicious Benediction at the very bottom */}
       <div className="relative z-10 mt-8 text-center text-[#9E782F] font-cormorant font-semibold text-sm tracking-[0.25em] uppercase">
-        <span>ॐ शुभं भवतु • कल्याणमस्तु</span>
+        {/* <span>ॐ शुभं भवतु • कल्याणमस्तु</span> */}
       </div>
 
     </section>
