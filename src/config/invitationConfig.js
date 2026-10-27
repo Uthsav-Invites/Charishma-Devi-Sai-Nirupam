@@ -9,15 +9,15 @@ export const INVITATION_CONFIG = {
     fullName: "Charishma Devi",
     shortName: "Charishma",
     role: "The Bride",
-    fatherName: "[BRIDE_FATHER_NAME]",
-    motherName: "[BRIDE_MOTHER_NAME]",
+    fatherName: "Tigireddy Satyanarayana ",
+    motherName: "Tigireddy Padmavathi",
   },
   groom: {
     fullName: "Sai Nirupam",
     shortName: "Sai Nirupam",
     role: "The Groom",
-    fatherName: "[GROOM_FATHER_NAME]",
-    motherName: "[GROOM_MOTHER_NAME]",
+    fatherName: "Arepalli Bharavi",
+    motherName: "Arepalli Radhika",
   },
 
   // Event Details
