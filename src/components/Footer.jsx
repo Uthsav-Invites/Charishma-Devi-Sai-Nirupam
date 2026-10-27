@@ -86,11 +86,6 @@ const Footer = () => {
         </div>
       </motion.div>
 
-      {/* Auspicious Sanskrit Benediction */}
-      <div className="relative z-10 mt-6 text-center text-[#9E782F] font-cormorant font-semibold text-sm tracking-[0.2em] uppercase">
-        <span>ॐ शुभं भवतु • कल्याणमस्तु</span>
-      </div>
-
     </footer>
   );
 };
