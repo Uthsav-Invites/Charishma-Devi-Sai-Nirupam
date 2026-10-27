@@ -55,8 +55,8 @@ const CouplePortraitSection = () => {
             transition={{ duration: 0.8, delay: 0.35 }}
             className="absolute bottom-2.5 sm:bottom-3.5 inset-x-2 sm:inset-x-3.5 z-20 py-2 px-2 sm:px-3 rounded-lg bg-[#FDF9F0]/92 backdrop-blur-md border border-[#C5A15B] shadow-[0_4px_14px_rgba(72,52,36,0.18)] flex items-center justify-center text-center"
           >
-            <h3 className="font-cursive font-bold text-lg sm:text-2xl md:text-[26px] text-[#820A24] whitespace-nowrap tracking-wide leading-none drop-shadow-[0_1px_1px_rgba(130,10,36,0.1)]">
-              {bride.fullName} <span className="font-cormorant italic text-base sm:text-xl text-[#9E782F] mx-1">&amp;</span> {groom.fullName}
+            <h3 className="font-cursive font-normal text-xl sm:text-2xl md:text-[27px] text-[#820A24] whitespace-nowrap tracking-wide leading-none">
+              {bride.fullName} <span className="font-cormorant italic font-normal text-base sm:text-xl text-[#9E782F] mx-1.5">&amp;</span> {groom.fullName}
             </h3>
           </motion.div>
 

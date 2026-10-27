@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="relative py-16 px-4 sm:px-6 flex flex-col items-center justify-center bg-[#FAF3E6] overflow-hidden border-t border-[#C5A15B]/50">
-      
+
       {/* Blessings Card */}
       <motion.div
         initial={{ opacity: 0, y: 25 }}
@@ -21,7 +21,7 @@ const Footer = () => {
         <div className="absolute inset-2 sm:inset-3 border border-[#C5A15B]/50 rounded pointer-events-none"></div>
 
         <div className="relative z-10 flex flex-col items-center py-2">
-          
+
           {/* Top Om & Lotus Emblem */}
           <div className="flex items-center justify-center gap-2 mb-3 text-[#9E782F]">
             <LotusMotif className="w-5 h-5 text-[#9E782F]" />
@@ -49,10 +49,10 @@ const Footer = () => {
 
           {/* Couple's Names */}
           <div className="my-2 flex flex-col items-center">
-            <h3 className="font-playfair italic font-bold text-3xl sm:text-4xl text-[#820A24] leading-tight">
+            <h3 className="font-cursive font-normal text-3xl sm:text-4xl text-[#820A24] leading-tight">
               {bride.fullName}
             </h3>
-            
+
             {/* Interlocking Rings Image Motif */}
             <motion.div
               animate={{
@@ -69,7 +69,7 @@ const Footer = () => {
               />
             </motion.div>
 
-            <h3 className="font-cursive font-semibold text-4xl sm:text-5xl text-[#820A24] leading-tight">
+            <h3 className="font-cursive font-normal text-3xl sm:text-4xl text-[#820A24] leading-tight">
               {groom.fullName}
             </h3>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
 
       {/* Auspicious Sanskrit Benediction */}
       <div className="relative z-10 mt-6 text-center text-[#9E782F] font-cormorant font-semibold text-sm tracking-[0.2em] uppercase">
-        <span>ॐ शुभं भवतु • कल्याणमस्तु</span>
+        {/* <span>ॐ शुभं भवतु • कल्याणमस्तु</span> */}
       </div>
 
     </footer>
